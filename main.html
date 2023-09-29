@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT Trucking </title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head> 
+<body>
+    <section class = "header">
+        <img class="logo" src="logo.png" alt="">
+        <nav>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="#Services">SERVICES</a></li>
+                    <li><a href="calendar.html">BOOKING</a></li>
+                </ul>
+        
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+    
+    
+    <div class="text-box">
+        <h1>CAT Trucking</h1>
+        <p>
+        </p>
+        
+    </div>
+
+    </section>
+
+    <!---About-->
+    
+    <section class="about" id="About">
+        <h1>About Us</h1>
+        <p>We offer much More for those in Need</p>
+
+        <div class="row">
+            <div class="about-col">
+                <h3>Intermediate</h3>
+                <p>We are a small hauling and excavation company based out of Alum Creek, WV. With goals to provide fa.
+                </p>
+            </div>
+            <div class="about-col">
+                <h3>Goals</h3>
+                <p>Our goals is to provide our services to those in need of pavement, hauling and excavation
+                </p>
+            </div>
+            <div class="about-col">
+                <h3>Service</h3>
+                <p>We offer concrete pavement for driveways, sidewalks, porches, you name it! 
+                </p>
+            </div>
+
+
+        </div>
+     
+
+
+    </section>
+<!--Projects-->
+<section class="projects" id="Services">
+<h1>Our Projects</h1>
+<p>Some of our projects we've done</p>
+<div class="row">
+    <div class="projects-col">
+        <img src="driveway.jpg">
+        <h3>Driveway pavement</h3>
+        <p>We recently completely redid a clients concrete driveway   </p>
+    </div>
+    <div class="projects-col">
+        <img src="equipment.jpg">
+        <h3>Equipment</h3>
+        <p>We recently completely redid a clients concrete driveway   </p>
+    </div>
+    <div class="projects-col">
+        <img src="backyard.jpg">
+        <h3>Backyard</h3>
+        <p>We recently completely redid a clients concrete driveway   </p>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!---Testimonials-->
+<section class="testimonials">
+<h1>What Our Clients Say</h1>
+<p>Here is Truist Bank awarding Chase Thomas</p>
+<div class="row">
+    <div class="testimonials-col">
+        <img src="Accomplishment.jpg">
+        <div>
+            <p>Truist Bank in Kanawha City awarded Chase Thompson of CAT Trucking Small Business Entrepeneur of the Year for being a great client to Truist, successful entrepreneur, great in his community efforts, and helping to employ others.</p>
+            <h3>Truist Bank</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+    </div>
+    
+</div>
+</section>
+
+
+
+
+
+
+<!---Footer-->
+<footer>    
+<div class="footer-container">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-solid fa-phone"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#Services">News</a></li>
+                    <li><a href="">Contact Us</a></li>
+                   
+                </ul>
+
+                </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2023; Designed by <span class="designer">uc</span></p>
+            
+        </div>
+    </div>
+</footer>
+    <!---JavaScript Toggle Menu-->
+   <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+   </script>
+   
+</body>
+</html>
+
+
+
+
+
