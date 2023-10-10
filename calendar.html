@@ -12,6 +12,7 @@
     <title>Booking Calendar</title>
 </head>
 <body>
+    
     <section class="calendar-header">
 
 <link rel="stylesheet" href="evo-calendar.min.css">
@@ -22,20 +23,24 @@
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#About">ABOUT</a></li>
-                <li><a href="#Services">SERVICES</a></li>
+                <li><a href="main.html">HOME</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                
                
             </ul>
     
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
+   
+    
     
 
     <div id="calendar"></div> 
+   
 
 </div>
+
 
 
 
@@ -43,7 +48,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="evo-calendar.min.js"></script>
+
 <script>
+    
 
 $(document).ready(function() {
     $('#calendar').evoCalendar({
@@ -72,7 +79,7 @@ $(document).ready(function() {
 
 </script>
 
-    <script>
+<script>
     var navLinks = document.getElementById("navLinks");
     function showMenu(){
         navLinks.style.right = "0";
@@ -80,6 +87,9 @@ $(document).ready(function() {
     function hideMenu(){
         navLinks.style.right = "-200px";
     }
+   
    </script>
+
+
 </body>
 </html>

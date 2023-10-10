@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <title>Projects We've Done Here At CAT Trucking And Excavation</title>
+</head>
+<body>
+    <section class="section">
+        <div class="slider">
+            <div class="slide">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                
+                <div class="st first">
+                    <img src="backyard.jpg">
+                </div>
+                <div class="st">
+                    <img src="driveway.jpg">
+                </div>
+                <div class="st">
+                    <img src="equipment.jpg">
+                </div>
+                <div class="st">
+                    <img src="Project1.jpg">
+                </div>
+               
+                <div class="nav-auto">
+                    <div class="a-b1"></div>
+                    <div class="a-b2"></div>
+                    <div class="a-b3"></div>
+                    <div class="a-b4"></div>
+                </div>
+            </div>
+
+            <div class="nav-m">
+            <labal for="radio1" class="m-btn"></labal>
+            <labal for="radio1" class="m-btn"></labal>
+            <labal for="radio1" class="m-btn"></labal>
+            <labal for="radio1" class="m-btn"></labal>
+        </div>
+    </div>
+    </section>
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        })
+    </script>
+</body>
+</html>

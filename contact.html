@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="contact.css">
+    <link rel = "stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <section class="contact-header">
+
+    <nav>
+            
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                
+                <li><a href="main.html">HOME</a></li>
+                <li><a href="calendar.html">BOOKING</a></li>
+               
+                
+            </ul>
+    
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+   
+
+    <div class="contact-form">
+    <form onsubmit="sendEmail(); reset(); return false;">
+        <div class="input-group">
+    <input type="text" id="name" required>
+    <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+     </div>
+     <div class="input-group">
+        <input type="text" id="number" required>
+        <label for="number"><i class="fa-solid fa-phone"></i> Phone No.</label>
+         </div>
+         <div class="input-group">
+            <input type="email" id="email" required>
+            <label for="email"><i class="fa-solid fa-envelope"></i> Email Id</label>
+             </div>
+             <div class="input-group">
+                <textarea id="message" rows="8" required></textarea>
+                <label for="message"><i class="fa-solid fa-comments"></i> How Can I Help You?</label>
+                 </div>
+                 <button type="submit"><i class="fa-solid fa-paper-plane"></i> SUBMIT</button>
+                 
+
+   </form>
+    </div>
+    </section>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "UserName",
+            Password : "Password",
+            To : 'mherron280@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form Enquiry",
+            Body : "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Phone No: " + document.getElementById("phone").value
+            + "<br> Message: " + document.getElementById("message").value
+    }).then(
+    message => alert("Message sent Successfully")
+);
+        }
+    </script>
+
+<script type="module">
+
+    // Import the functions you need from the SDKs you need
+  
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+  
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+  
+    // TODO: Add SDKs for Firebase products that you want to use
+  
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+  
+    // Your web app's Firebase configuration
+  
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  
+    const firebaseConfig = {
+  
+      apiKey: "AIzaSyDITuTUBgodbUNo_sQ_qEw4buVPEUAAEDc",
+  
+      authDomain: "cat-trucking-and-excavation.firebaseapp.com",
+  
+      projectId: "cat-trucking-and-excavation",
+  
+      storageBucket: "cat-trucking-and-excavation.appspot.com",
+  
+      messagingSenderId: "917950863094",
+  
+      appId: "1:917950863094:web:a98e190a0b01fe022bbed7",
+  
+      measurementId: "G-5CYBK276CD"
+  
+    };
+  
+  
+    // Initialize Firebase
+  
+    const app = initializeApp(firebaseConfig);
+  
+    const analytics = getAnalytics(app);
+  
+  </script>
+</body>
+</html>
